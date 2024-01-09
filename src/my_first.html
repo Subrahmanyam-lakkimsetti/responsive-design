@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my_first</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="nav.png" height="30px">
+    </div>
+    <img src="banner2.jpg" alt="banner" height="240" id="banner">
+    <h1>
+        About Jovian
+    </h1>
+    <div id="about">
+        <div id="description">
+            <p style="margin-top:0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci necessitatibus
+                ratione nihil quod expedita iusto veniam,
+                in tempore ea, dignissimos eos possimus quia cupiditate ipsam? Recusandae quos consequuntur incidunt
+                aspernatur
+                laudantium in quod magni impedit adipisci id culpa sit voluptatibus iste veniam, non laborum iusto
+                deserunt doloribus</p>
+            <p>
+            <ol>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">front end</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">back end</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="team.jpg" alt="team pic">
+        </div>
+    </div>
+    <h2 style="text-align: center;">Job Opportunities</h2>
+    <div id="jobs">
+        <table id="table">
+            <tr class="table-header">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="table-header">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="table-data">
+                <td>front-end developer</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>$12,00,000</td>
+                <td>Mar 3,2023</td>
+            </tr>
+            <tr class="table-data">
+                <td>Full-stack developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>$15,00,000</td>
+                <td>Feb 1,2023</td>
+            </tr>
+            <tr class="table-data">
+                <td>Data scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>Dec 22,2022</td>
+            </tr>
+            <tr class="table-data">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19,2022</td>
+            </tr>
+
+        </table>
+        <h2>Submit your application</h2>
+        <form id="application-form" action="https://formbold.com/s/6rYAD" method="POST">
+            <div>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Full Name" placeholder="Santosh" required>
+            </div>
+
+            <div>
+                <label for="Email">Email</label><br>
+                <input type="email" id="Email" name="Email address" placeholder="Santosh@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="Number">Number</label><br>
+                <input type="number" id="number" name="Mobile number" placeholder="9347848219" required>
+            </div>
+
+            <div>
+                <label for="DOB">Date of Birth</label><br>
+                <input type="date" id="DOB" name="Date of Birth" placeholder="03/08/2005" required>
+            </div>
+
+            <div>
+                <label for="position">Position applied For</label><br>
+                <select id="position" name="position applied for" required>
+                    <option value="select position">select position</option>
+                    <option value="front-end">front-end developer</option>
+                    <option value="Full-stack">Full-stack developer</option>
+                    <option value="Data scientist">Data scientist</option>
+                    <option value="ML engineer">ML engineer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="File">upload Resume</label><br>
+                <input type="file" id="File" name="Resume" style="border: 1px solid gray" required>
+            </div>
+
+            <div>
+                <label for="cover letter">Cover letter</label><br>
+                <textarea placeholder="Enter your text here" id="cover letter" name="cover letter" rows="5"
+                    required></textarea>
+            </div>
+
+            <div>
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="terms&conditions" required>
+                    I aggre to the terms and conditions
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="submit application" style="padding:5px 15px">
+            </div>
+
+        </form>
+
+    </div>
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">programs</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">courses</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">data scientist</a>
+            </li>
+        </ul>
+        <span class="copy-right">© 2023 jovian</span>
+    </div>
+</body>
+
+</html>
