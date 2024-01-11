@@ -21,19 +21,20 @@
 
 <body>
     <div id="navbar">
-        <img src="nav.png" height="30px">
+        <img src="favicon.png" id="nav">
+        <img src="nav.png" height="30px" id="nav-image">
     </div>
-    <img src="banner2.jpg" alt="banner" height="240" id="banner">
+    <img src="banner2.jpg" alt="banner"  id="banner">
     <h1>
         welcome to Jovian
     </h1>
     <div id="about">
         <div id="description">
             <p style="margin-top:0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci necessitatibus
-                ratione nihil quod expedita iusto veniam,
-                in tempore ea, dignissimos eos possimus quia cupiditate ipsam? Recusandae quos consequuntur incidunt
+                ratione nihil quod iusto veniam,
+                in tempore ea, dignissimos eos possimus cupiditate ipsam? Recusandae quos consequuntur incidunt
                 aspernatur
-                laudantium in quod magni impedit adipisci id culpa sit voluptatibus iste veniam, non laborum iusto
+                laudantium in quod magni imp adipisci id culpa sit voluptatibus iste veniam, non laborum iusto
                 deserunt doloribus</p>
             <p>
             <ol>
@@ -47,51 +48,79 @@
             </p>
         </div>
         <div id="team">
-            <img id="team-image" src="team.jpg" alt="team pic">
+            <img id="team-image" height="100" src="team.jpg" alt="team pic">
         </div>
     </div>
-    <h2 style="text-align: center;">Job Opportunities</h2>
+    <h2>Job Opportunities</h2>
     <div id="jobs">
-        <table id="table">
-            <tr class="table-header">
-                <th rowspan="2">Job Title</th>
-                <th colspan="2">Location</th>
-                <th rowspan="2">Salary</th>
-                <th rowspan="2">Posted on</th>
-            </tr>
-            <tr class="table-header">
-                <th>City</th>
-                <th>Country</th>
-            </tr>
-            <tr class="table-data">
-                <td>front-end developer</td>
-                <td>Bengaluru</td>
-                <td>India</td>
-                <td>$12,00,000</td>
-                <td>Mar 3,2023</td>
-            </tr>
-            <tr class="table-data">
-                <td>Full-stack developer</td>
-                <td>New Delhi</td>
-                <td>India</td>
-                <td>$15,00,000</td>
-                <td>Feb 1,2023</td>
-            </tr>
-            <tr class="table-data">
-                <td>Data scientist</td>
-                <td>San Francisco</td>
-                <td>USA</td>
-                <td>$175,000</td>
-                <td>Dec 22,2022</td>
-            </tr>
-            <tr class="table-data">
-                <td>ML Engineer</td>
-                <td colspan="2">Remote</td>
-                <td>$80,000</td>
-                <td>Sep 19,2022</td>
-            </tr>
+        <div id="jobs-list">
+            <div class="job-list">
+                <div class="job-title">front-end developer</div>
+                <div class="job-details">New Delhi,India</div>
+                <div class="job-details">$12,00,000</div>
+                <div class="job-details">posted on Mar 3,2023</div>
+            </div>
+            <div class="job-list">
+                <div class="job-title">Full-stack developer</div>
+                <div class="job-details">New Delhi,India</div>
+                <div class="job-details">$15,00,000</div>
+                <div class="job-details">posted on Feb 1,2023</div>
+            </div>
+            <div class="job-list">
+                <div class="job-title">Data scientist</div>
+                <div class="job-details">San Francisco,USA</div>
+                <div class="job-details">$175,000</div>
+                <div class="job-details">posted on Dec 22,2022</div>
+            </div>
+            <div class="job-list">
+                <div class="job-title">ML Engineer</div>
+                <div class="job-details">Remote</div>
+                <div class="job-details">$80,000</div>
+                <div class="job-details">posted on Sep 19,2022</div>
+            </div>
+            
+        </div>
 
-        </table>
+                <table id="table">
+                    <tr class="table-header">
+                        <th rowspan="2">Job Title</th>
+                        <th colspan="2">Location</th>
+                        <th rowspan="2">Salary</th>
+                        <th rowspan="2">Posted on</th>
+                    </tr>
+                    <tr class="table-header">
+                        <th>City</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr class="table-data">
+                        <td>front-end developer</td>
+                        <td>Bengaluru</td>
+                        <td>India</td>
+                        <td>$12,00,000</td>
+                        <td>Mar 3,2023</td>
+                    </tr>
+                    <tr class="table-data">
+                        <td>Full-stack developer</td>
+                        <td>New Delhi</td>
+                        <td>India</td>
+                        <td>$15,00,000</td>
+                        <td>Feb 1,2023</td>
+                    </tr>
+                    <tr class="table-data">
+                        <td>Data scientist</td>
+                        <td>San Francisco</td>
+                        <td>USA</td>
+                        <td>$175,000</td>
+                        <td>Dec 22,2022</td>
+                    </tr>
+                    <tr class="table-data">
+                        <td>ML Engineer</td>
+                        <td colspan="2">Remote</td>
+                        <td>$80,000</td>
+                        <td>Sep 19,2022</td>
+                    </tr>
+
+                </table>
         <h2>Submit your application</h2>
         <form id="application-form" action="https://formbold.com/s/6rYAD" method="POST">
             <div>
@@ -164,5 +193,5 @@
         </ul>
         <span class="copy-right">© 2023 jovian</span>
     </div>
-</body>
+</body> 
 </html>
