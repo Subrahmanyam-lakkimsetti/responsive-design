@@ -1,5 +1,7 @@
+/* base styles */
+/* Mobile */
 html{
-    font-size: 16px;
+    font-size: 14px;
 }
 body{
     margin:0;
@@ -8,68 +10,63 @@ body{
     font-size: 1rem;
     color:#444444;
 }
-#navbar{
-    padding:8px;
-    margin:0;
-}
+
+
 h1,h2,h3,h4,h5,h6{
     font-family: sans-serif;
     font-weight:600;
     color:#222222;
     text-align: center;
 }
-#about{
-    display:flex;
-    max-width: 800px;
-    margin:0px auto;
+
+#navbar{
     padding:8px;
 }
-#description{
-    width:50%;
-    padding-right: 50px;
-    font-size: 1.15rem;
-    color:black;
+
+h1,h2{
+    margin:8px auto;
 }
-#team{
-    width:50%;
+
+#nav{
+    height:32px;
+    display:block;
 }
-#team-image{
-    border-radius: 5px;
-    width:100%;
+
+#nav-image{
+    display: none;
 }
-h1{
-    text-align: center;
-}
+
 #banner {
     width:100%;
     object-fit:cover;
     margin:0;
     padding-top:0;
+    height:180px;
 }
 
-#jobs{
-    max-width: 800px;
-    margin:0 auto;
-    padding:8px;
+#about{
+    display:flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin:0px auto;
+    padding-left: 8px;
 }
-#table{
-    width:100%;
-    border:1px solid gray;
-    border-collapse: collapse;
+
+#team{
+    margin: 0 auto;
 }
-.table-header th{
-    border:1px solid gray;
-    padding: 6px;
-   background-color:#BFDBFE;
-   color:#222222;
+
+#team-image{
+    height:200px;
+    border-radius: 5px;
 }
-.table-data td{
-    border:1px solid gray;
-    padding:6px;
+
+#description{
+    padding:4px;
+    font-size: 1.15rem;
+    color:black;
 }
-#table tr:nth-child(even){
-    background-color:#EFF6FF;
-}
+
 a{
     text-decoration: none;
     color:#3B82F6;
@@ -77,14 +74,43 @@ a{
 a:hover{
     color:#1D4ED8;
 }
+
+#jobs{
+    max-width: 800px;
+    margin:0 auto;
+    padding:8px;
+}
+
+#table{
+    display:none;
+}
+
+.job-list{
+    border:1px solid #dddddd;
+    margin:8px;
+    padding:4px;
+}
+
+.job-title{
+    font-size: 1.25rem;
+    font-weight:500;
+    color:#222222;
+}
+
+.job-details{
+    padding-top: 3px;
+    color:#555555;
+}
+
 #application-form label{
     font-weight:600;
 }
 #application-form input,select,textarea  {
     padding:3px;
-    margin-top: 6px;
-    margin-bottom: 18px;
+    margin-top:6px;
+    margin-bottom: 10px;
     font-size: 1.15rem;
+    width:90%;
 }
 
 #application-form textarea{
@@ -96,12 +122,181 @@ a:hover{
     color:white;
     font-weight: 500;
     border-radius: 5px;
+    width:40%;
 }
 #application-form input[type="checkbox"]{
-    width:16px;
-    height:16px;
+    width:14px;
+    height:14px;
+}
+
+#footer{
+    background-color: ghostwhite;
+    text-align: center;
+    margin-top:14px;
+    padding:4px;
 
 }
+#footer-links{
+    list-style: none;
+    padding:0px;
+}
+#footer-links li{
+    display:flex;
+    flex-direction:column;
+    padding:2px 32px;
+
+}
+.copy-right{
+    color:#71717A;
+    font-size: 0.875rem;;
+}
+
+@media screen and (min-width: 576px){
+    /* tab-screen */
+    html{
+        font-size: 16px;
+    }
+
+    #nav{
+        height:32px;
+        display:none;
+    }
+    
+    #nav-image{
+        display:block;
+    }
+
+    #banner{
+        height:200px;
+    }
+
+
+    #about{
+        display:flex;
+        flex-direction: column;
+        max-width: 550px;
+        margin:0px auto;
+        padding:4px;
+        padding-left: 8px;
+    }
+    
+    #team{
+        margin: 0 auto;
+    }
+    
+    #team-image{
+        height:250px;
+        border-radius: 5px;
+    }
+    
+    #description{
+        font-size: 1.15rem;
+        color:black;
+    }
+
+    #application-form input[type="submit"]{
+        margin-top:14px;
+    }
+
+    #footer-links li{
+            display:inline;
+            padding:0px 32px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    /* laptop-screen*/
+    html{
+        font-size: 18px;
+    }
+
+    #banner{
+        height:280px;
+    }
+
+    #about{
+        display:flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin:0px auto;
+        padding:8px;
+    }
+    #description{
+        width:50%;
+        padding-right: 50px;
+        font-size: 1.15rem;
+        color:black;
+    }
+    #team{
+        width:50%;
+    }
+    #team-image{
+        border-radius: 5px;
+        width:100%;
+        height:240px;
+    }
+
+    #jobs-list{
+        display:none;
+    }
+
+    #table{
+        width:100%;
+        border:1px solid gray;
+        border-collapse: collapse;
+        display:table;
+    }
+    .table-header th{
+        border:1px solid gray;
+        padding: 6px;
+       background-color:#BFDBFE;
+       color:#222222;
+    }
+    .table-data td{
+        border:1px solid gray;
+        padding:6px;
+    }
+    #table tr:nth-child(even){
+        background-color:#EFF6FF;
+    }
+
+    #application-form label{
+        font-weight:600;
+    }
+    #application-form input,select,textarea  {
+        padding:3px;
+        margin-top: 6px;
+        margin-bottom: 18px;
+        font-size: 1.15rem;
+        width:30%;
+    }
+    
+    #application-form textarea{
+        width:80%;
+    }
+    
+    #application-form input[type="submit"]{
+        background-color:#3B82F6;
+        color:white;
+        font-weight: 500;
+        border-radius: 5px;
+        width:25%;
+    }
+    #application-form input[type="checkbox"]{
+        width:16px;
+        height:16px;
+    }
+
+}
+
+/*  
+
+
+
+
+
+
 
 #footer{
     background-color: ghostwhite;
@@ -120,3 +315,7 @@ a:hover{
     color:#71717A;
     font-size: 0.875rem;;
 }
+*/
+
+
+    
